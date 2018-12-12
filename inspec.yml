@@ -1,11 +1,11 @@
-name: inspec-aws-base
+name: inspec-aws-baseline
 title: Centrias Colocation base profile for AWS accounts
 maintainer: support@centrias.net
 copyright: Centrias Colocation GmbH
 copyright_email: support@centrias.net
 license: Apache-2.0
-summary: InSpec Base Profile for AWS account setup verification
-version: 0.2
+summary: InSpec Baseline Profile for AWS account setup verification
+version: 1.0
 supports:
   - platform: aws
 inspec_version: "~> 3"
