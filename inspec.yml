@@ -8,4 +8,4 @@ summary: InSpec Baseline Profile for AWS account setup verification
 version: 1.0
 supports:
   - platform: aws
-inspec_version: "~> 3"
+inspec_version: ">= 3"
