@@ -1,9 +1,3 @@
-cis_level = attribute(
-    'cis_level',
-    default: '2',
-    description: 'CIS profile level to audit',
-    required: true
-    )
 
 title '4 CIS Amazon Web Services Foundations Benchmark, version 1.2.0, Networking section'
 

@@ -11,14 +11,13 @@ This profile covers some parts of the "CIS Amazon Web Services Foundations Bench
 
 ## Usage
 
-You can easily use this InSpec profile from github:
+Please make sure you have InSpec version >= 4 installed. 
+
+**We recommend the usage of [aws-vault](https://github.com/99designs/aws-vault).**
+
+You can easily use this InSpec profile from Github:
 
 ```
-
-  ## assume role before to set AWS profile, credentials, token for that terminal session:
-  brew install remind101/formulae/assume-role
-  eval $(assume-role <YOUR-NAMED-AWS-PROFILE>)
-
-  inspec exec https://github.com/centriascolocation/inspec-aws-baseline -t aws://
+  aws-vault exec YOURNAMEDPROFILEHERE -- inspec exec https://github.com/centriascolocation/inspec-aws-baseline -t aws://
 
 ```
