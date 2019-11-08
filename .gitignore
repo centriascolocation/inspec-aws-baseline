@@ -1,2 +1,4 @@
 inspec.lock
 Gemfile.lock
+.idea/
+vendor/
