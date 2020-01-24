@@ -8,6 +8,7 @@ This profile covers some parts of the "CIS Amazon Web Services Foundations Bench
   * Logging
   * Monitoring
   * Networking
+  * additional best-practices not covered by the CIS Benchmark
 
 ## Usage
 
