@@ -11,7 +11,7 @@ This profile covers some parts of the "CIS Amazon Web Services Foundations Bench
 
 ## Usage
 
-Please make sure you have InSpec version >= 4 installed. 
+Please make sure you have InSpec version >= 4 installed, e.g. with `bundle install` (see [Gemfile](Gemfile) for details). 
 
 **We recommend the usage of [aws-vault](https://github.com/99designs/aws-vault).**
 
