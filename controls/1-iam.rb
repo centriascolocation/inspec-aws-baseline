@@ -10,13 +10,13 @@ control 'cis-amazon-web-services-foundation-benchmark-1.2' do
   tag cis: 'CIS_Amazon_Web_Services_Foundations_Benchmark:1.2'
   tag level: 1
 
-  describe aws_iam_users.where(has_console_password?: true) do
+  describe aws_iam_users.where(has_console_password: true) do
     it { should exist }
   end
 
   console_users_without_mfa = aws_iam_users
-                                .where(has_console_password?: true)
-                                .where(has_mfa_enabled?: false)
+                                .where(has_console_password: true)
+                                .where(has_mfa_enabled: false)
 
   describe console_users_without_mfa do
     it { should_not exist }
