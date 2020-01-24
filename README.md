@@ -18,6 +18,7 @@ Please make sure you have InSpec version >= 4 installed.
 You can easily use this InSpec profile from Github:
 
 ```
-  aws-vault exec YOURNAMEDPROFILEHERE -- inspec exec https://github.com/centriascolocation/inspec-aws-baseline -t aws://
+  ## the "-n" instructs aws-vault not to use AWS STS session tokens:
+  aws-vault exec -n <YOURNAMEDPROFILEHERE> -- inspec exec --show-progress https://github.com/centriascolocation/inspec-aws-baseline/archive/master.tar.gz -t aws://
 
 ```
