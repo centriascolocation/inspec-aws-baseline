@@ -5,13 +5,13 @@ copyright: Centrias Colocation GmbH
 copyright_email: support@centrias.net
 license: Apache-2.0
 summary: InSpec Baseline Profile for AWS account setup verification
-version: 1.1
+version: 1.1.2
 supports:
   - platform: aws
 inspec_version: ">= 4"
 depends:
   - name: inspec-aws
-    git: git@github.com:inspec/inspec-aws.git
+    url: https://github.com/inspec/inspec-aws/archive/master.tar.gz
 inputs:
   - name: cis_level
     type: Numeric
