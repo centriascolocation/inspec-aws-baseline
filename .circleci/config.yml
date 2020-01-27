@@ -10,6 +10,10 @@ jobs:
           command: |
             inspec version
       - run:
+          name: Vendor dependencies
+          command: |
+            inspec vendor --overwrite . --chef-license=accept-silent
+      - run:
           name: Check profile
           command: |
             inspec check . --chef-license=accept-silent
