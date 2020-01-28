@@ -5,7 +5,7 @@ copyright: Centrias Colocation GmbH
 copyright_email: support@centrias.net
 license: Apache-2.0
 summary: InSpec Baseline Profile for AWS account setup verification
-version: 1.1.2
+version: 1.2.0
 supports:
   - platform: aws
 inspec_version: ">= 4"

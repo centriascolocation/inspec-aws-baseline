@@ -1,4 +1,3 @@
-
 title '2 CIS Amazon Web Services Foundations Benchmark, version 1.2.0, Logging section'
 
 control 'cis-amazon-web-services-foundation-benchmark-2.5' do
@@ -13,7 +12,7 @@ control 'cis-amazon-web-services-foundation-benchmark-2.5' do
     it { should exist }
   end
 
-  #describe aws_cloudtrail_trails do
+  # describe aws_cloudtrail_trails do
   #  its('entries.count') { should be >= 1}
-  #end
+  # end
 end

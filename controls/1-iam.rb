@@ -1,4 +1,3 @@
-
 title '1 CIS Amazon Web Services Foundations Benchmark, version 1.2.0, IAM section'
 
 control 'cis-amazon-web-services-foundation-benchmark-1.2' do
@@ -15,8 +14,8 @@ control 'cis-amazon-web-services-foundation-benchmark-1.2' do
   end
 
   console_users_without_mfa = aws_iam_users
-                                .where(has_console_password: true)
-                                .where(has_mfa_enabled: false)
+                              .where(has_console_password: true)
+                              .where(has_mfa_enabled: false)
 
   describe console_users_without_mfa do
     it { should_not exist }
@@ -56,7 +55,7 @@ control 'cis-amazon-web-services-foundation-benchmark-1.4' do
     aks_ids.each do |ak|
       describe aws_iam_access_key(id: ak, username: user) do
         its('create_date') { should be > Time.now - 90 * 86400 }
-     end
+      end
     end
   end
 end

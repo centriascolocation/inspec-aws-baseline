@@ -1,4 +1,3 @@
-
 title '4 CIS Amazon Web Services Foundations Benchmark, version 1.2.0, Networking section'
 
 control 'cis-amazon-web-services-foundation-benchmark-4.1' do

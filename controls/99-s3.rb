@@ -8,8 +8,8 @@ control 's3-public-buckets-99.1' do
 
   all_buckets.each do |b|
     describe aws_s3_bucket(b) do
-        it { should_not be_public }
-        it { should have_default_encryption_enabled }
+      it { should_not be_public }
+      it { should have_default_encryption_enabled }
     end
   end
 
