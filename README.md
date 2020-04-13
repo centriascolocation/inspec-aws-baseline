@@ -1,8 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [InSpec AWS Baseline Profile](#inspec-aws-baseline-profile)
+  - [Usage](#usage)
+  - [AWS Organizations](#aws-organizations)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # InSpec AWS Baseline Profile
 
 [![centriascolocation](https://circleci.com/gh/centriascolocation/inspec-aws-baseline.svg?style=svg)](https://circleci.com/gh/centriascolocation/inspec-aws-baseline)
-
-:exclamation: This is work in progress, only a few controls are implemented by now.
 
 This profile covers some parts of the "CIS Amazon Web Services Foundations Benchmark (v1.2.0)".
 
@@ -27,7 +35,7 @@ You can easily use this InSpec profile from Github:
 
   ## the "-n" instructs aws-vault not to use AWS STS session tokens:
   aws-vault exec -n <YOURNAMEDPROFILEHERE> -- inspec exec \
-     -t aws:// --show-progress \
+    -t aws:// --show-progress \
     https://github.com/centriascolocation/inspec-aws-baseline/archive/master.tar.gz
 
 ```
