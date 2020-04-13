@@ -18,3 +18,23 @@ inputs:
     value: 2
     required: true
     description: CIS profile level to audit
+  - name: check_aws_organizations_member
+    type: Boolean
+    value: false
+    description: check AWS Organizations Membership
+  - name: check_aws_organizations_master
+    type: Boolean
+    value: false
+    description: check AWS Organizations Master
+  - name: master_account_id
+    type: String
+    required: false
+    value: ''
+  - name: master_account_name
+    type: String
+    required: false
+    value: ''
+  - name: master_account_email
+    type: String
+    required: false
+    value: ''

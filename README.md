@@ -10,7 +10,9 @@ This profile covers some parts of the "CIS Amazon Web Services Foundations Bench
   * Logging
   * Monitoring
   * Networking
-  * additional best-practices not covered by the CIS Benchmark
+  * additional best-practices not covered by the CIS Benchmark:
+    * S3 (not public and encrypted)
+    * Organizations
 
 ## Usage
 
@@ -20,8 +22,28 @@ Please make sure you have InSpec version >= 4 installed, e.g. with `bundle insta
 
 You can easily use this InSpec profile from Github:
 
+
 ```
+
   ## the "-n" instructs aws-vault not to use AWS STS session tokens:
-  aws-vault exec -n <YOURNAMEDPROFILEHERE> -- inspec exec --show-progress https://github.com/centriascolocation/inspec-aws-baseline/archive/master.tar.gz -t aws://
+  aws-vault exec -n <YOURNAMEDPROFILEHERE> -- inspec exec \
+     -t aws:// --show-progress \
+    https://github.com/centriascolocation/inspec-aws-baseline/archive/master.tar.gz
+
+```
+
+## AWS Organizations
+
+You can also check if a given account is part of AWS Organizations (Master or Member). This feature is disabled by default.
+You can enable it by providing variables given as an [InSpec Input File](https://www.inspec.io/docs/reference/inputs/). 
+
+[See example configurations here](enable-aws-organizations-checks.yml).
+
+```
+
+  aws-vault exec -n <YOURNAMEDPROFILEHERE> -- inspec exec \
+    https://github.com/centriascolocation/inspec-aws-baseline/archive/master.tar.gz \
+    -t aws:// --show-progress \
+    --input-file enable-aws-organizations-checks.yml
 
 ```

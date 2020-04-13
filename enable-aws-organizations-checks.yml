@@ -1,0 +1,5 @@
+check_aws_organizations_member: true
+check_aws_organizations_master: false
+master_account_id: '99887766554433'
+master_account_name: MyMasterAccountName
+master_account_email: MyMaster@email.com

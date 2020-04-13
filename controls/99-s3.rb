@@ -1,4 +1,4 @@
-title '99 Additional Controls focused on Best Practices'
+title '99 Additional Controls focused on Best Practices - S3'
 
 control 's3-public-buckets-99.1' do
   title "S3 Public Buckets with Default Encryption enabled"
