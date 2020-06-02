@@ -14,13 +14,21 @@
 
 This profile covers some parts of the "CIS Amazon Web Services Foundations Benchmark (v1.2.0)".
 
+Batteries included:
+
   * IAM
+    * MFA for root account :white_check_mark:
+    * Password Policy :white_check_mark:
+    * all your Access Keys - Expiration :white_check_mark:
   * Logging
-  * Monitoring
+    * AWS Config is active :white_check_mark:
+    * CloudTrail is enabled :white_check_mark:
   * Networking
+    * Security Groups for SSH are not restricted :white_check_mark:
   * additional best-practices not covered by the CIS Benchmark:
-    * S3 (not public and encrypted)
-    * Organizations
+    * all your S3 Buckets (per Region, not public and encrypted) :white_check_mark:
+    * Organizations :white_check_mark:
+    * all your EBS volumes should be encrypted (per region) :white_check_mark:
 
 ## Usage
 

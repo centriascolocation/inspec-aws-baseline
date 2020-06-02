@@ -1,5 +1,16 @@
 title '2 CIS Amazon Web Services Foundations Benchmark, version 1.2.0, Logging section'
 
+control 'cis-amazon-web-services-foundation-benchmark-2.1' do
+  impact 1.0
+  title 'Ensure CloudTrail is enabled in all regions (Scored)'
+  desc 'The AWS API call history produced by CloudTrail enables security analysis, resource change tracking, and compliance auditing.'
+  tag level: 1
+
+  describe aws_cloudtrail_trails do
+    its('entries.count') { should be >= 1 }
+  end
+end
+
 control 'cis-amazon-web-services-foundation-benchmark-2.5' do
   impact 1.0
   title 'Ensure AWS Config is enabled in all regions (Scored)'
@@ -10,9 +21,10 @@ control 'cis-amazon-web-services-foundation-benchmark-2.5' do
 
   describe aws_config_recorder do
     it { should exist }
+    it { should be_recording }
   end
 
-  # describe aws_cloudtrail_trails do
-  #  its('entries.count') { should be >= 1}
-  # end
+  describe aws_config_delivery_channel do
+    it { should exist }
+  end
 end
