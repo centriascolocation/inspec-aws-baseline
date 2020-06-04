@@ -1,6 +1,6 @@
 title '99 Additional Controls focused on Best Practices - EBS Volume Encryption'
 
-control 'ebs-public-buckets-99.1' do
+control 'ebs-volumes-99.4' do
   title "EBS Volume Encryption"
   desc "All your EBS Volumes should be encrypted"
 
