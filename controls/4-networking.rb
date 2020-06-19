@@ -1,7 +1,7 @@
 title '4 CIS Amazon Web Services Foundations Benchmark, version 1.2.0, Networking section'
 
 control 'cis-amazon-web-services-foundation-benchmark-4.1' do
-  impact 1.0
+  impact 'high'
   title "Ensure no security groups allow ingress from 0.0.0.0/0 to port 22"
   desc "It is recommended that no security group allows unrestricted ingress access to port 22."
 

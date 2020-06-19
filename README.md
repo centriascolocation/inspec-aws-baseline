@@ -7,6 +7,8 @@
     - [IAM Permissions](#iam-permissions)
     - [Profile Execution](#profile-execution)
   - [AWS Organizations](#aws-organizations)
+  - [Further Information](#further-information)
+    - [The Importance of Compliance Results](#the-importance-of-compliance-results)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -75,3 +77,17 @@ You can enable it by providing variables given as an [InSpec Input File](https:/
     --input-file enable-aws-organizations-checks.yml
 
 ```
+
+## Further Information
+
+### The Importance of Compliance Results
+
+These values are based off [CVSS 3.0](https://en.wikipedia.org/wiki/Common_Vulnerability_Scoring_System): 
+
+| numeric value | impact, importance |
+| ------------- | ------------------ |
+| 0.0 to <0.01  | `none` - they only provide information |
+| 0.01 to <0.4  | `low` |
+| 0.4 to <0.7   | `medium` |
+| 0.7 to <0.9   | `high` |
+| 0.9 to 1.0    | `critical` |

@@ -2,7 +2,7 @@ title '1 CIS Amazon Web Services Foundations Benchmark, version 1.2.0, IAM secti
 
 control 'cis-amazon-web-services-foundation-benchmark-1.2' do
 
-  impact 1.0
+  impact 'medium'
   title "Ensure multi-factor authentication (MFA) is enabled for all IAM users that have a console password"
   desc "It is recommended that MFA be enabled for all accounts that have a console password."
 
@@ -23,7 +23,7 @@ control 'cis-amazon-web-services-foundation-benchmark-1.2' do
 end
 
 control 'cis-amazon-web-services-foundation-benchmark-1.3' do
-  impact 1.0
+  impact 'medium'
   title 'Ensure credentials unused for 90 days or greater are disabled'
   desc 'It is recommended that all credentials that have been unused in 90 or greater days be removed or deactivated.'
 
@@ -38,7 +38,7 @@ control 'cis-amazon-web-services-foundation-benchmark-1.3' do
 end
 
 control 'cis-amazon-web-services-foundation-benchmark-1.4' do
-  impact 1.0
+  impact 'medium'
   title 'Ensure access keys are rotated every 90 days or less'
   desc 'It is recommended that all access keys be regularly rotated.'
 
@@ -61,7 +61,7 @@ control 'cis-amazon-web-services-foundation-benchmark-1.4' do
 end
 
 control 'cis-amazon-web-services-foundation-benchmark-1.5' do
-  impact 1.0
+  impact 'medium'
   title 'Ensure IAM password policy requires at least one uppercase letter'
   desc "It isrecommended that the password policy require at least one uppercase letter."
 
@@ -74,7 +74,7 @@ control 'cis-amazon-web-services-foundation-benchmark-1.5' do
 end
 
 control 'cis-amazon-web-services-foundation-benchmark-1.6' do
-  impact 1.0
+  impact 'medium'
   title 'Ensure IAM password policy require at least one lowercase letter'
   desc "It is recommended that the password policy require at least one lowercase letter."
 
@@ -87,7 +87,7 @@ control 'cis-amazon-web-services-foundation-benchmark-1.6' do
 end
 
 control 'cis-amazon-web-services-foundation-benchmark-1.7' do
-  impact 1.0
+  impact 'medium'
   title 'Ensure IAM password policy require at least one symbol'
   desc "It is recommended thatthe password policy require at least one symbol."
 
@@ -100,7 +100,7 @@ control 'cis-amazon-web-services-foundation-benchmark-1.7' do
 end
 
 control 'cis-amazon-web-services-foundation-benchmark-1.8' do
-  impact 1.0
+  impact 'medium'
   title 'Ensure IAM password policy require at least one number'
   desc "It is recommended that the password policy require at least one number."
 
@@ -113,7 +113,7 @@ control 'cis-amazon-web-services-foundation-benchmark-1.8' do
 end
 
 control 'cis-amazon-web-services-foundation-benchmark-1.9' do
-  impact 1.0
+  impact 'medium'
   title 'Ensure IAM password policy requires minimum length of 14 or greater'
   desc "It is recommended that the password policy require a minimum password length 14."
 
@@ -126,7 +126,7 @@ control 'cis-amazon-web-services-foundation-benchmark-1.9' do
 end
 
 control 'cis-amazon-web-services-foundation-benchmark-1.13' do
-  impact 1.0
+  impact 'critical'
   title 'Ensure MFA is enabled for the "root" account'
   desc "The root account is the most privileged user in an AWS account."
 
