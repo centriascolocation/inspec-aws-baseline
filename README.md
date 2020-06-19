@@ -4,6 +4,8 @@
 
 - [InSpec AWS Baseline Profile](#inspec-aws-baseline-profile)
   - [Usage](#usage)
+    - [IAM Permissions](#iam-permissions)
+    - [Profile Execution](#profile-execution)
   - [AWS Organizations](#aws-organizations)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -35,6 +37,16 @@ Batteries included:
 Please make sure you have InSpec version >= 4 installed, e.g. with `bundle install` (see [Gemfile](Gemfile) for details). 
 
 **We recommend the usage of [aws-vault](https://github.com/99designs/aws-vault).**
+
+### IAM Permissions
+
+Make sure your Auditor IAM User has the following managed policy attached:
+
+`arn:aws:iam::aws:policy/SecurityAudit`
+
+It is also possible to use higher privileged policies, such as `arn:aws:iam::aws:policy/ReadOnlyAccess`.
+
+### Profile Execution
 
 You can easily use this InSpec profile from Github:
 
