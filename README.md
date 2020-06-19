@@ -28,9 +28,10 @@ Batteries included:
     * AWS Config is active :white_check_mark:
     * CloudTrail is enabled :white_check_mark:
   * Networking
-    * Security Groups for SSH are not restricted :white_check_mark:
+    * Security Groups for SSH are restricted :white_check_mark:
+    * Security Groups for Remote Desktop (RDP) are restricted :white_check_mark:
   * additional best-practices not covered by the CIS Benchmark:
-    * all your S3 Buckets (per Region, not public and encrypted) :white_check_mark:
+    * all your S3 Buckets are not public and encrypted (per Region) :white_check_mark:
     * Organizations :white_check_mark:
     * all your EBS volumes should be encrypted (per region) :white_check_mark:
 
