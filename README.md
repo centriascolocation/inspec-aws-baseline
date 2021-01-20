@@ -34,7 +34,7 @@ Batteries included:
     * all your S3 Buckets are not public and encrypted (per Region) :white_check_mark:
     * Organizations :white_check_mark:
     * all your EBS volumes should be encrypted (per region) :white_check_mark:
-    * ECR: Test that images are scanned for vulnerabilities at a push to repository
+    * ECR: Test that images are scanned for vulnerabilities at a push to repository :white_check_mark:
 
 ## Usage
 
