@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: chef/inspec:4.18
+      - image: chef/inspec:4.25
     steps:
       - checkout
       - run:

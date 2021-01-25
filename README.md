@@ -3,12 +3,14 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [InSpec AWS Baseline Profile](#inspec-aws-baseline-profile)
-  - [Usage](#usage)
-    - [IAM Permissions](#iam-permissions)
-    - [Profile Execution](#profile-execution)
-  - [AWS Organizations](#aws-organizations)
-  - [Further Information](#further-information)
-    - [The Importance of Compliance Results](#the-importance-of-compliance-results)
+    - [Usage](#usage)
+        - [IAM Permissions](#iam-permissions)
+        - [Profile Execution - variant A](#profile-execution-variant-a)
+        - [Profile Execution - variant B](#profile-execution-variant-b)
+        - [Re-Vendor Dependencies](#re-vendor-dependencies)
+    - [AWS Organizations](#aws-organizations)
+    - [Further Information](#further-information)
+        - [The Importance of Compliance Results](#the-importance-of-compliance-results)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -50,7 +52,7 @@ Make sure your Auditor IAM User has the following managed policy attached:
 
 It is also possible to use higher privileged policies, such as `arn:aws:iam::aws:policy/ReadOnlyAccess`.
 
-### Profile Execution
+### Profile Execution - variant A
 
 You can easily use this InSpec profile from Github:
 
@@ -61,6 +63,25 @@ You can easily use this InSpec profile from Github:
   aws-vault exec -n <YOURNAMEDPROFILEHERE> -- inspec exec \
     -t aws:// --show-progress \
     https://github.com/centriascolocation/inspec-aws-baseline/archive/master.tar.gz
+
+```
+
+### Profile Execution - variant B
+
+Call InSpec with AWS region + your local configured Profile:
+
+```
+
+  inspec exec -t aws://eu-central-1/my-named-profile --show-progress \
+    https://github.com/centriascolocation/inspec-aws-baseline/archive/master.tar.gz
+  
+```
+
+### Re-Vendor Dependencies
+
+```
+
+  inspec vendor --overwrite . 
 
 ```
 
