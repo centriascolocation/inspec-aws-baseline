@@ -3,14 +3,14 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [InSpec AWS Baseline Profile](#inspec-aws-baseline-profile)
-    - [Usage](#usage)
-        - [IAM Permissions](#iam-permissions)
-        - [Profile Execution - variant A](#profile-execution-variant-a)
-        - [Profile Execution - variant B](#profile-execution-variant-b)
-        - [Re-Vendor Dependencies](#re-vendor-dependencies)
-    - [AWS Organizations](#aws-organizations)
-    - [Further Information](#further-information)
-        - [The Importance of Compliance Results](#the-importance-of-compliance-results)
+  - [Usage](#usage)
+    - [IAM Permissions](#iam-permissions)
+    - [Profile Execution - variant A](#profile-execution---variant-a)
+    - [Profile Execution - variant B](#profile-execution---variant-b)
+    - [Re-Vendor Dependencies](#re-vendor-dependencies)
+  - [AWS Organizations](#aws-organizations)
+  - [Further Information](#further-information)
+    - [The Importance of Compliance Results](#the-importance-of-compliance-results)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
