@@ -17,6 +17,7 @@
 # InSpec AWS Baseline Profile
 
 [![centriascolocation](https://circleci.com/gh/centriascolocation/inspec-aws-baseline.svg?style=svg)](https://circleci.com/gh/centriascolocation/inspec-aws-baseline)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/centriascolocation/inspec-aws-baseline)
 
 This profile covers some parts of the "CIS Amazon Web Services Foundations Benchmark (v1.2.0)".
 
