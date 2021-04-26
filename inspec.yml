@@ -11,7 +11,7 @@ supports:
 inspec_version: ">= 4.25"
 depends:
   - name: inspec-aws
-    url: https://github.com/inspec/inspec-aws/archive/v1.33.0.tar.gz
+    url: https://github.com/inspec/inspec-aws/archive/v1.36.0.tar.gz
 inputs:
   - name: cis_level
     type: Numeric
