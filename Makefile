@@ -25,8 +25,7 @@ build-docker-images: ## custom Docker image with additional batteries included
 
 test: ## runs InSpec tests
 	@echo "Please be patient - this can take a while ......."
-	@-export $(shell aws-vault exec -n $(AWS_PROFILE) -- env | grep --color=never ^AWS | xargs) && \
-		$(INSPEC_DOCKER_RUN) \
+	@$(INSPEC_DOCKER_RUN) \
 		exec -t aws:// \
 		$(INSPEC_ACCEPT_EULA) \
 		.
