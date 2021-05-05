@@ -1,0 +1,21 @@
+FROM ruby:2-alpine
+
+ARG GEM_SOURCE=https://rubygems.org
+ARG INSPEC_VERSION
+
+LABEL maintainer="Michael Krieg <michael@centrias.de>"
+LABEL com.chef.inspec.version="4.36.4"
+
+ENV VERSION ${INSPEC_VERSION}
+
+RUN mkdir -p /share
+RUN apk add --update build-base libxml2-dev libffi-dev git openssh-client
+RUN gem install --no-document --source ${GEM_SOURCE} --version ${VERSION} inspec
+RUN gem install --no-document --source ${GEM_SOURCE} --version ${VERSION} inspec-bin
+RUN apk del build-base
+RUN apk add --no-cache git-crypt openssl gnupg
+
+ENTRYPOINT ["inspec"]
+CMD ["help"]
+VOLUME ["/share"]
+WORKDIR /share
