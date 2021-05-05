@@ -101,6 +101,16 @@ You can enable it by providing variables given as an [InSpec Input File](https:/
 
 ```
 
+## Local execution of tests with Docker
+
+```
+  git clone https://github.com/centriascolocation/inspec-aws-baseline.git
+  
+  make build-docker-images
+  aws-vault exec -n <YOURNAMEDPROFILEHERE> -- make test
+  
+```
+
 ## Further Information
 
 ### The Importance of Compliance Results
