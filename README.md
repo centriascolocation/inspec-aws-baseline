@@ -16,7 +16,6 @@
 
 # InSpec AWS Baseline Profile
 
-[![centriascolocation](https://circleci.com/gh/centriascolocation/inspec-aws-baseline.svg?style=svg)](https://circleci.com/gh/centriascolocation/inspec-aws-baseline)
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/centriascolocation/inspec-aws-baseline)
 
 This profile covers some parts of the "CIS Amazon Web Services Foundations Benchmark (v1.2.0)".
@@ -100,6 +99,16 @@ You can enable it by providing variables given as an [InSpec Input File](https:/
     -t aws:// --show-progress \
     --input-file enable-aws-organizations-checks.yml
 
+```
+
+## Local execution of tests with Docker
+
+```
+  git clone https://github.com/centriascolocation/inspec-aws-baseline.git
+  
+  make build-docker-images
+  aws-vault exec -n <YOURNAMEDPROFILEHERE> -- make test
+  
 ```
 
 ## Further Information
