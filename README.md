@@ -9,6 +9,7 @@
     - [Profile Execution - variant B](#profile-execution---variant-b)
     - [Re-Vendor Dependencies](#re-vendor-dependencies)
   - [AWS Organizations](#aws-organizations)
+  - [Local execution of tests with Docker](#local-execution-of-tests-with-docker)
   - [Further Information](#further-information)
     - [The Importance of Compliance Results](#the-importance-of-compliance-results)
 
